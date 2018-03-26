@@ -1,0 +1,49 @@
+body {
+  width: 100%;
+  min-width: 1150px;
+}
+.nav {
+  width: 99.8%;
+  min-width: 670px;
+  height: 50px;
+  background-color: #fafafa;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  color: #000;
+}
+.nav li {
+  float: left;
+  margin-left: 30px;
+  font-size: 14px;
+  color: #777;
+  line-height: 50px;
+  cursor: pointer;
+}
+.nav li:nth-child(1) {
+  font-size: 18px;
+  font-weight: 400;
+}
+.nav li.movie-click:hover {
+  color: #000;
+}
+.nav li input {
+  height: 30px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  padding: 0 6px;
+}
+.nav li button {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #bbb;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-left: -24px;
+  line-height: 30px;
+}
+.nav li button:hover {
+  background-color: #e6e6e6;
+  color: #333;
+  border-color: #adadad;
+}

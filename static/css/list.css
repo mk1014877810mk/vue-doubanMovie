@@ -1,0 +1,82 @@
+.clearfix:after {
+  content: "";
+  width: 0;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+.list {
+  margin-top: 36px;
+  padding: 15px 50px;
+}
+.list .title {
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  color: #666;
+  font-size: 24px;
+  font-weight: 400;
+}
+.list ul {
+  width: 1170px;
+  margin: 0 auto;
+}
+.list ul li {
+  float: left;
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 530px;
+  text-align: center;
+  margin: 30px;
+}
+.list ul li .bottom {
+  text-align: left;
+}
+.list ul li .bottom div {
+  margin: 4px 0;
+  font-size: 14px;
+}
+.list .footer {
+  text-align: center;
+}
+.list .footer .page {
+  display: inline-block;
+  border: 1px solid #aaa;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.list .footer .next,
+.list .footer .prev {
+  width: 60px;
+}
+.list div.el-pagination.el-pagination--small {
+  text-align: center;
+}
+.list ul.el-pager {
+  vertical-align: middle;
+  display: inline-block;
+  width: auto!important;
+  height: auto!important;
+}
+.list ul.el-pager li,
+.list button.btn-prev,
+.list button.btn-next {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 25px;
+  padding: 0;
+  vertical-align: middle;
+  margin: 10px;
+}
+.list button.btn-next {
+  margin-top: 6px;
+}
