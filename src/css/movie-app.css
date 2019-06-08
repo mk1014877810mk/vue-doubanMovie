@@ -1,0 +1,9 @@
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 46px;
+  background: url('http://img.pcauto.com.cn/images/upload/upc/tx/bbs6/1507/24/c121/10179103_1437723860549_1024x1024.jpg');
+  background-size: cover;
+  margin: 0 24px 0 0;
+}
