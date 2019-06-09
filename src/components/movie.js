@@ -9,7 +9,7 @@ import MovieDetail from './movieDetail'
 
 import '../css/movie.css'
 
-const { Sider, Content } = Layout;
+const { Sider, Content } = Layout
 
 export default class movie extends React.Component {
 
@@ -17,29 +17,22 @@ export default class movie extends React.Component {
     super(props)
     this.state = {
       collapsed: false,
-      sel:'/'+props.location.pathname.split('/')[2]
+      sel: '/' + props.location.pathname.split('/')[2]
     }
-  }
 
-  changeSideBarSel(sel) {
-    console.log('sel:',sel);
-    this.setState({
-      sel
+    props.history.listen(route => {
+      const hash = '/' + route.pathname.split('/')[2];
+      this.setState({
+        sel: hash
+      })
     })
-  }
-
-
-  toggle = () => {
-    this.setState({
-      collapsed: !this.state.collapsed,
-    });
   }
 
   render() {
     return (
       <Layout>
         <Sider trigger={null} collapsible collapsed={this.state.collapsed}>
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={[this.state.sel]}>
+          <Menu theme="dark" mode="inline" selectedKeys={[this.state.sel]}>
             <Menu.Item key="/in_theaters">
               <Link to="/movie/in_theaters">
                 <span>正在热映</span>
