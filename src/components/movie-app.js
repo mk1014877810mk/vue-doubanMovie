@@ -16,9 +16,9 @@ class MovieApp extends Component {
   constructor(props) {
     super(props)
     console.log(props)
-    const hash = window.location.hash || '#/'
+    const hash = props.location.pathname
     this.state = {
-      sel: hash.substr(1).startsWith('/movie') ? '/movie/in_theaters' : hash.substr(1)
+      sel: hash.startsWith('/movie') ? '/movie/in_theaters' : hash
     }
 
     props.history.listen(route => {
